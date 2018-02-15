@@ -38,11 +38,11 @@ contract RamenShop {
         availableRamen.push(Ramen(_name, _id, _price));
     }
 
-    function _generateRamenDescription(string _noodles, string _broth, string _flavouring, string _topping1, string _topping2) private returns (string) {
+    /* function _generateRamenDescription(string _noodles, string _broth, string _flavouring, string _topping1, string _topping2) private returns (string) {
         ingredients.push(Ingredients(_noodles, _broth, _flavouring, _topping1, _topping2));
         string description = (_noodles, _broth, _flavouring, _topping1, _topping2);
         return description;
-    }   
+    }
 
     function createRandomRamen(string _name) private {
         uint randId = _generateRandomId(_name);
@@ -52,5 +52,5 @@ contract RamenShop {
      function _generateRandomId(string _str) private view returns (uint) {
         uint rand = uint(keccak256(_str));
         return rand;
-    }
+    }*/
 }
